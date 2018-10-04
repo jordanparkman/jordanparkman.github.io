@@ -7,6 +7,15 @@ body, html {
 
 .my-wide {letter-spacing:3px;}
 
+@media (min-width:601px){
+	.my-col.m1{
+		float:left;
+        width:20%
+    }
+}
+
+.my-bottom-border {border-bottom-style: dotted;}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
