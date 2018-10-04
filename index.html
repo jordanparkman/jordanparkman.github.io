@@ -81,69 +81,70 @@
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
+
   <!--<h3 class="w3-center">MY WORK</h3>-->
   <h3 class="w3-center"><em>Here are some of my projects.<br> Click on the titles to see more</em></h3><br>
 
   <!-- Responsive Grid. 3 columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-third">
-	<a href="https://guiltygecko.itch.io/astro-music" target="_blank">
-		<p>Astro Music, Rhythm Game</p>
-	</a>
-      <img src="imgs/astro.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Astro Game Cover Art" >
-    </div>
+	<div class="w3-row-padding w3-center">
+		<div class="w3-third">
+			<a href="https://guiltygecko.itch.io/astro-music" target="_blank">
+				<p>Astro Music, Rhythm Game</p>
+			</a>
+			<img src="imgs/astro.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Astro Game Cover Art" >
+		</div>
 
-    <div class="w3-third">
-	<a href="https://i.imgur.com/7Hxuc3s.png" target="_blank">
-	<p>Payroll, Console Project</p>
-	</a>
-      <img src="imgs/console.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Console Input Image">
-    </div>
+		<div class="w3-third">
+			<a href="https://i.imgur.com/7Hxuc3s.png" target="_blank">
+				<p>Payroll, Console Project</p>
+			</a>
+			<img src="imgs/console.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Console Input Image">
+		</div>
 
-    <div class="w3-third">
-		<a href="https://node-guiltygecko.c9users.io/" target="_blank">
-			<p>Email List, Database Project</p>
-		</a>
-		<img src="imgs/email_img.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Email List Image">
-    </div>
+		<div class="w3-third">
+			<a href="https://node-guiltygecko.c9users.io/" target="_blank">
+				<p>Email List, Database Project</p>
+			</a>
+			<img src="imgs/email_img.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Email List Image">
+		</div>
 		<a href="documents/Jordan_Parkman_Resume2018.pdf" download>
-	    <button class="w3-button w3-col w3-padding-large w3-light-grey" style="margin-top:64px">Resume.PDF</button> 
+			<button class="w3-button w3-col w3-padding-large w3-light-grey" style="margin-top:64px">Resume.PDF</button> 
 		</a>
-  </div>
+	</div>
 </div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
+	<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+		<img id="img01" class="w3-image">
+		<p id="caption" class="w3-opacity w3-large"></p>
+	</div>
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-center w3-padding-large w3-black w3-xlarge my-wide w3-animate-opacity">
-	 CONTACT</span>
-  </div>
+	<div class="w3-display-middle">
+		<span class="w3-center w3-padding-large w3-black w3-xlarge my-wide w3-animate-opacity">CONTACT</span>
+	</div>
 </div>
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">Want to talk? Let's!</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <p class="w3-center"><em>I'd love to work with you!</em></p>
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Atlanta, GA<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (404)-202-2449<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jallenparkman@yahoo.com<br>
-      </div>
-      <p>Let's get this started<i class="fa fa-coffee"></i></p>
-    </div>
-  </div>
+	<div class="w3-row w3-padding-32 w3-section">
+		<div class="w3-col m8 w3-panel">
+		  <div class="w3-large w3-margin-bottom">
+			<i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i> Atlanta, GA<br>
+			<i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i> Phone: +1 (404)-202-2449<br>
+			<i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i> Email: jallenparkman@yahoo.com<br><br>
+			<i class="fa fa-coffee fa-fw w3-xlarge w3-margin-right"></i> Let's get this started<br>
+		  </div>
+		</div>		
+	</div>
+
 </div>
 
 <!-- Footer -->
@@ -168,9 +169,9 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
     }
 }
 
@@ -184,11 +185,6 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 </body>
 </html>
