@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <title>Jordan Parkman Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3CSS.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/myblogCSS.css" >
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-Equiv="Cache-Control" Content="no-cache" />
+<meta http-Equiv="Pragma" Content="no-cache" />
+<meta http-Equiv="Expires" Content="0" />
+<link rel="stylesheet" href="css/w3CSS.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="css/myblogCSS.css"/>
 
 <body>
 
@@ -59,7 +62,7 @@
 <!-- Titles -->
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-third w3-section">
-    <span class="w3-xlarge">Front-End Development</span><br>
+    <span class="w3-xlarge">Web Development</span><br>
 
   </div>
   <div class="w3-third w3-section">
@@ -109,10 +112,11 @@
 		</div>
 
 		<div class="w3-col w3-hide-small">
-			<a href="imgs/resumeSmallPic.png" target="_blank">
 				<p class="w3-col">Resume Quick View</p>
-				<iframe src="documents/Jordan_Parkman_Resume2018.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
-			</a>
+				<iframe id="frame-id" src="documents/Jordan_Parkman_Resume2018.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
+				<!--<object data="documents/Jordan_Parkman_Resume2018.pdf" style="width:718px; height:700px;">
+					<embed src="documents/Jordan_Parkman_Resume2018.pdf" style="width:718px; height:700px;"></embed>
+				</object>-->
 		</div>
 		<a class="w3-padding-small" href="documents/Jordan_Parkman_Resume2018.pdf" download>
 			<button class="w3-button w3-col w3-grey"><i class="fa fa-file-pdf-o"></i> Download Resume.PDF</button> 
@@ -193,6 +197,10 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+//Refresh iframe
+ var frameElement = document.getElementById("frame-id");
+    frameElement.contentWindow.location.href = frameElement.src;
 </script>
 
 </body>
